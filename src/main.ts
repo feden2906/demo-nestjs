@@ -20,7 +20,7 @@ async function bootstrap() {
     swaggerOptions: {
       docExpansion: 'none',
       defaultModelsExpandDepth: 3,
-      persistAuthorization: true
+      persistAuthorization: true,
     },
   });
   await app.listen(3000);
