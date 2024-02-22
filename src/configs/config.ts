@@ -7,7 +7,7 @@ export default (): ConfigType => ({
     host: process.env.APP_HOST || '0.0.0.0',
   },
   postgres: {
-    port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
+    port: parseInt(process.env.POSTGRES_PORT, 10) || 5432,
     host: process.env.POSTGRES_HOST || '0.0.0.0',
     user: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
