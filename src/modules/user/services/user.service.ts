@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, UnprocessableEntityException } from '@nestjs/common';
 import { CreateUserDto } from '../dto/req/create-user.dto';
 import { UpdateUserDto } from '../dto/req/update-user.dto';
 
@@ -13,6 +13,8 @@ export class UserService {
   }
 
   public async findOne(id: number): Promise<any> {
+    throw  new UnprocessableEntityException('wwwwwwww')
+
     return `This action returns a #${id} user`;
   }
 
