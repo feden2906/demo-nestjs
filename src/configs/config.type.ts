@@ -1,6 +1,7 @@
 export type ConfigType = {
   app: AppConfig;
   postgres: PostgresConfig;
+  redis: RedisConfig;
 };
 
 export type AppConfig = {
@@ -14,4 +15,10 @@ export type PostgresConfig = {
   user: string;
   password: string;
   dbName: string;
+};
+
+export type RedisConfig = {
+  port: number;
+  host: string;
+  password: string;
 };

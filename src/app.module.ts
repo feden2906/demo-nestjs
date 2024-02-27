@@ -6,10 +6,12 @@ import { ConfigModule } from '@nestjs/config';
 import configuration from './configs/config';
 import { PostgresModule } from './modules/postgres/postgres.module';
 import { RepositoryModule } from './modules/repository/repository.module';
+import { RedisModule } from './modules/redis/redis.module';
 
 @Module({
   imports: [
     PostgresModule,
+    RedisModule,
     ConfigModule.forRoot({
       load: [configuration],
       isGlobal: true,

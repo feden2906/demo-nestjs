@@ -32,4 +32,3 @@ export class RefreshTokenEntity {
   @JoinColumn({ name: 'user_id' })
   user: UserEntity;
 }
-
